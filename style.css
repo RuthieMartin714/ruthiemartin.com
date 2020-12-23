@@ -1,9 +1,31 @@
-html {
+body {
     background-color: #E4EBFF;
 }
-
+h1 {
+    font-family: meno-banner, serif;
+    font-weight: 300;
+    font-style: italic;
+}
 p {    
     font-family: filson-pro, sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 40px;
+}
+
+.homepage-bg-fill {
+    background-image: url("photos/mobile/home/gradient.JPG");
+    background-size: cover;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.homepage-bg-fill p {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.homepage-bg-fill h1 {
+    color: #ffffff;
+    font-size: 120px;
 }
