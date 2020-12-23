@@ -15,17 +15,27 @@ p {
 
 .homepage-bg-fill {
     background-image: url("photos/mobile/home/gradient.JPG");
+    width: 100vw;
     background-size: cover;
     height: 100vh;
     box-sizing: border-box;
+    padding: 12rem;
+    padding-top: 30rem;
 }
 
 .homepage-bg-fill p {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 45px;
+    line-height: 5rem;
 }
 
 .homepage-bg-fill h1 {
     color: #ffffff;
-    font-size: 120px;
+    font-size: 140px;
+    transform: skewX(-19deg);
+    /* correcting alignment from SkewX distortion */
+    left: 2rem;
+    position: relative;
+
+    margin: 0;
 }
