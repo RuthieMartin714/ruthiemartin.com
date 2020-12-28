@@ -21,6 +21,7 @@ p {
     box-sizing: border-box;
     padding: 12rem;
     padding-top: 30rem;
+    position: relative;
 }
 
 .homepage-bg-fill p {
@@ -35,7 +36,15 @@ p {
     transform: skewX(-19deg);
     /* correcting alignment from SkewX distortion */
     left: 2rem;
-    position: relative;
 
     margin: 0;
+}
+.mobile-menu-icon-white {
+    width: 5rem;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4rem;
+    
 }
