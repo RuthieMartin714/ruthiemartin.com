@@ -32,7 +32,15 @@ p {
 .menu-footer {
     padding: 3rem 4rem;
     border-top: 4px solid #0014A3;
+    display: flex;
+    justify-content: space-between;
 
+
+}
+
+.menu-footer-icon {
+    width: 5rem;
+    height: 5rem;
 }
 
 .menu-logo {
