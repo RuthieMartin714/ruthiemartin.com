@@ -23,6 +23,16 @@ p {
     background: #E4EBFF;
     position: absolute;
     top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.menu-footer {
+    padding: 3rem 4rem;
+    border-top: 4px solid #0014A3;
+
 }
 
 .menu-logo {
@@ -30,6 +40,15 @@ p {
     padding: 5rem 12rem;
     box-sizing: border-box;
     border-bottom: 4px solid #0014A3;
+}
+
+.menu-footer-text{
+    font-family: meno-banner, serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 4rem;
+    transform: skewX(-17deg);
+    color: #0014A3;
 }
 
 .homepage-bg-fill {
@@ -55,7 +74,6 @@ p {
     transform: skewX(-19deg);
     /* correcting alignment from SkewX distortion */
     left: 2rem;
-
     margin: 0;
 }
 .mobile-menu-icon-white {
