@@ -25,22 +25,7 @@ p {
     top: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
-}
-
-.menu-footer {
-    padding: 3rem 4rem;
-    border-top: 4px solid #0014A3;
-    display: flex;
-    justify-content: space-between;
-
-
-}
-
-.menu-footer-icon {
-    width: 5rem;
-    height: 5rem;
+    justify-content: space-between; 
 }
 
 .menu-logo {
@@ -48,6 +33,37 @@ p {
     padding: 5rem 12rem;
     box-sizing: border-box;
     border-bottom: 4px solid #0014A3;
+}
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.nav-items button {
+    margin-bottom: 8rem;
+    background: none;
+    border: none;
+    font-family: Filson Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #0014A3;
+}
+
+.menu-footer {
+    padding: 3rem 4rem;
+    border-top: 4px solid #0014A3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-footer-icon {
+    width: 5rem;
+    height: 5rem;
 }
 
 .menu-footer-text{
