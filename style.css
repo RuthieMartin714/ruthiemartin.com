@@ -1,6 +1,10 @@
 body {
     background-color: #E4EBFF;
 }
+
+.page {
+    position: relative;
+}
 h1 {
     font-family: meno-banner, serif;
     font-weight: 300;
@@ -11,6 +15,20 @@ p {
     font-weight: 500;
     font-style: normal;
     font-size: 40px;
+}
+
+.menu {
+    width: 100vw;
+    height: 100vh;
+    background: #E4EBFF;
+    position: absolute;
+    top: 0px;
+}
+
+.menu-logo {
+    width: 100%;
+    padding: 5rem 12rem;
+    box-sizing: border-box;
 }
 
 .homepage-bg-fill {
