@@ -4,6 +4,7 @@ body {
 
 .page {
     position: relative;
+    overflow: hidden;
 }
 h1 {
     font-family: meno-banner, serif;
