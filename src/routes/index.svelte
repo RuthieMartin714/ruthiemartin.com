@@ -1,9 +1,21 @@
 
+<script>
+    let menuIsOpen = false;
+
+    function openMenu(){
+        menuIsOpen = true;
+    }
+
+    function closeMenu(){
+        menuIsOpen = false;
+    }
+
+</script>
 
 <div class="page">
     <div class="homepage-bg-fill">
         <h1>I'm ruthie</h1>    
-        <img class="mobile-menu-icon-white" src="/photos/icons/white menu icon.png"/>
+        <img class="mobile-menu-icon-white" src="/photos/icons/white menu icon.png" on:click={openMenu}/>
 
         <p>
             a designer whose attention to detail motivates self-improvement & excellence in my work. 
@@ -11,7 +23,7 @@
         </p>  
     </div>
 
-    <div class="menu">
+    <div class="menu" class:open={menuIsOpen}>
         <img class="menu-logo" src="photos/mobile/menu/purple_logo.png"/>
         <div class="nav-items">
             <button>home</button>
@@ -24,7 +36,7 @@
             <div class="menu-footer-text">
                 texas, tennessee & beyond
             </div>
-            <img class="menu-footer-icon" src="photos/mobile/menu/x icon.png" >
+            <img class="menu-footer-icon" src="photos/mobile/menu/x icon.png" on:click={closeMenu}/>
         </div>
     </div>
     
