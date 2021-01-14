@@ -6,4 +6,7 @@
 * see git changes: `git status`
 * add files to the staging area (prepaing to be committed): `git add file_name`
 * commit staged files: `git commit -m "message goesh here"`
-* push committed changes: `git push`      
+* push committed changes: `git push` 
+
+* run server: `npm run dev`
+* close server: `control c`
