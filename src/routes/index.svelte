@@ -10,6 +10,12 @@
         menuIsOpen = false;
     }
 
+    let designSubNavigationIsOpen = false;
+
+    function toggleDesignSubMenu(){
+        designSubNavigationIsOpen = !designSubNavigationIsOpen;
+    }
+
 </script>
 
 <div class="page">
@@ -27,7 +33,8 @@
         <img class="menu-logo" src="photos/mobile/menu/purple_logo.png"/>
         <div class="nav-items">
             <a href="/home">home</a>
-            <button>design</button> 
+            <button on:click={toggleDesignSubMenu} >design</button> 
+            {#if designSubNavigationIsOpen}
                 <div class="sub-navigation"> 
                     <a href="/design/magnolia">Magnolia</a>
                     <a href="/design/magnolia-network">Magnolia Network</a>
@@ -39,6 +46,7 @@
                     <a href="/design/third-creek-coffee">Third Creek Coffee</a>
                     <a href="/design/corey-low-interiors">Corey Low interiors</a>
                 </div>
+            {/if}
             <button>photo</button>
             <button>painting</button>
             <a href="/ruthie">Ruthie</a>
@@ -141,9 +149,10 @@ p {
 .nav-items {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;  
+    margin: auto;  
     overflow-y: scroll;
-    padding-top: 25rem;
+    width: 100%;
+    padding-top: 4rem;
 }
 
 .nav-items a, .nav-items button{
@@ -158,7 +167,11 @@ p {
     letter-spacing: 0.15em;
     color: #0014A3;
     text-align: center;
-    text-decoration: none; 
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
 }
 
 .sub-navigation {
