@@ -26,11 +26,22 @@
     <div class="menu" class:open={menuIsOpen}>
         <img class="menu-logo" src="photos/mobile/menu/purple_logo.png"/>
         <div class="nav-items">
-            <a>home</a>
-            <a href="/design">design</a> 
-            <a>photo</a>
-            <a>painting</a>
-            <a>Ruthie</a>
+            <a href="/home">home</a>
+            <button>design</button> 
+                <div class="sub-navigation"> 
+                    <a href="/design/magnolia">Magnolia</a>
+                    <a href="/design/magnolia-network">Magnolia Network</a>
+                    <a href="/design/adrian-michael-design-build">Adrian Michael Design Build</a>
+                    <a href="/design/vindagua-magazine">Vindagua Magazine</a>
+                    <a href="/design/paige-severance">Paige Severance</a>
+                    <a href="/design/alchemist-book-cover">Alchemist book cover</a>
+                    <a href="/design/the-yaqar-project">The Yaqar Project</a>
+                    <a href="/design/third-creek-coffee">Third Creek Coffee</a>
+                    <a href="/design/corey-low-interiors">Corey Low interiors</a>
+                </div>
+            <button>photo</button>
+            <button>painting</button>
+            <a href="/ruthie">Ruthie</a>
         </div>
         <div class="menu-footer">
             <div class="menu-footer-text">
@@ -131,9 +142,11 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;  
+    overflow-y: scroll;
+    padding-top: 25rem;
 }
 
-.nav-items a {
+.nav-items a, .nav-items button{
     margin: 4rem;
     background: none;
     border: none;
@@ -146,6 +159,16 @@ p {
     color: #0014A3;
     text-align: center;
     text-decoration: none; 
+}
+
+.sub-navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-navigation a {
+    font-size: 1.25rem;
+    margin: 2rem;
 }
 
 .menu-footer {
