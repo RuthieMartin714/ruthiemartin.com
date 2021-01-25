@@ -26,11 +26,11 @@
     <div class="menu" class:open={menuIsOpen}>
         <img class="menu-logo" src="photos/mobile/menu/purple_logo.png"/>
         <div class="nav-items">
-            <button>home</button>
-            <button>design</button>
-            <button>photo</button>
-            <button>painting</button>
-            <button>Ruthie</button>
+            <a>home</a>
+            <a href="/design">design</a> 
+            <a>photo</a>
+            <a>painting</a>
+            <a>Ruthie</a>
         </div>
         <div class="menu-footer">
             <div class="menu-footer-text">
@@ -133,7 +133,7 @@ p {
     justify-content: space-around;  
 }
 
-.nav-items button {
+.nav-items a {
     margin: 4rem;
     background: none;
     border: none;
@@ -144,6 +144,8 @@ p {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: #0014A3;
+    text-align: center;
+    text-decoration: none; 
 }
 
 .menu-footer {
