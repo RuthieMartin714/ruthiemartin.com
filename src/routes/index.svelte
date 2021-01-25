@@ -1,5 +1,7 @@
 
 <script>
+    import {slide} from "svelte/transition";
+
     let menuIsOpen = false;
 
     function openMenu(){
@@ -15,6 +17,18 @@
     function toggleDesignSubMenu(){
         designSubNavigationIsOpen = !designSubNavigationIsOpen;
     }
+
+    let designSubNavigationItems = [
+        { name: "Magnolia", href: "/magnolia" },
+        { name: "Magnolia Network", href: "/design/magnolia-network" },
+        { name: "Adrian Michael Design Build", href: "/design/adrian-michael-design-build" },
+        { name: "Vindagua Magazine", href: "/design/vindagua-magazine" },
+        { name: "Paige Severance", href: "/design/paige-severance" },
+        { name: "Alchemist Book Cover", href: "/design/alchemist-book-cover" },
+        { name: "The Yaqar Project", href: "/design/the-yaqar-project" },
+        { name: "Third Creek Coffee", href: "/design/third-creek-coffee" },
+        { name: "Corey Low Interiors", href: "/design/corey-low-interiors" },
+    ];
 
 </script>
 
@@ -35,16 +49,10 @@
             <a href="/home">home</a>
             <button on:click={toggleDesignSubMenu} >design</button> 
             {#if designSubNavigationIsOpen}
-                <div class="sub-navigation"> 
-                    <a href="/design/magnolia">Magnolia</a>
-                    <a href="/design/magnolia-network">Magnolia Network</a>
-                    <a href="/design/adrian-michael-design-build">Adrian Michael Design Build</a>
-                    <a href="/design/vindagua-magazine">Vindagua Magazine</a>
-                    <a href="/design/paige-severance">Paige Severance</a>
-                    <a href="/design/alchemist-book-cover">Alchemist book cover</a>
-                    <a href="/design/the-yaqar-project">The Yaqar Project</a>
-                    <a href="/design/third-creek-coffee">Third Creek Coffee</a>
-                    <a href="/design/corey-low-interiors">Corey Low interiors</a>
+                <div class="sub-navigation" >
+                    {#each designSubNavigationItems as item (item.href)}
+                        <a transition:slide href={item.href}>{item.name}</a>
+                    {/each}
                 </div>
             {/if}
             <button>photo</button>
